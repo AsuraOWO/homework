@@ -11,7 +11,7 @@ fdp -T png -o graph08.png data graph08.dot
 
 ```
 ./listing_5_1.py --jaccard_index_threshold 0.3 ../data graph03.dot
-fdp -T png -o graph08.png data graph03.dot
+fdp -T png -o graph03.png data graph03.dot
 ```
 
 ---
