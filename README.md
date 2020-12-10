@@ -22,8 +22,7 @@ fdp -T png -o graph03.png data graph03.dot
 --- 
 ## 重要語法說明
 
-用於計算惡意程式jaccard距離
-的到的距離越大相似度越相近
+用於計算惡意程式jaccard距離 得到的距離越大相似度越相近
 ```
 def jaccard(set1,set2):
     intersection = set1.intersection(set2)
