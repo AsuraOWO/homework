@@ -23,7 +23,7 @@ fdp -T png -o graph08.png data graph03.dot
 ## 重要語法說明
 
 用於計算惡意程式jaccard距離
-
+的到的距離越大相似度越相近
 ```
 def jaccard(set1,set2):
     intersection = set1.intersection(set2)
@@ -33,3 +33,26 @@ def jaccard(set1,set2):
     return intersection_length / union_length
 ```
 
+取得目標檔案識別格式(如檔案路徑之類的)
+```
+def getstrings(fullpath):
+    strings = os.popen("strings '{0}'".format(fullpath)).read()
+    strings = set(strings.split("\n"))
+    return strings
+```
+
+確認檔案是否是我們要的檔案型態
+```
+def pecheck(fullpath):
+    return open(fullpath).read(2) == "MZ"
+```
+
+使用argparse處理引數
+最重要的引數調整 --jaccard_index_threshold用來調整門檻值
+門檻值越高越不相似 連接線就會越少
+```
+parser.add_argument(
+    "--jaccard_index_threshold","-j",dest="threshold",type=float,
+    default=0.8,help="Threshold above which to create an 'edge' between samples"
+)
+```
