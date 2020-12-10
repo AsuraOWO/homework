@@ -8,7 +8,7 @@
 ./listing_5_1.py ../data graph08.dot
 fdp -T png -o graph08.png data graph08.dot
 ```
-![](https://imgur.com/0hrEZsm)
+![](https://imgur.com/0hrEZsm.png)
 
 ---
 
@@ -18,7 +18,7 @@ fdp -T png -o graph08.png data graph08.dot
 ./listing_5_1.py --jaccard_index_threshold 0.3 ../data graph03.dot
 fdp -T png -o graph03.png data graph03.dot
 ```
-![](https://imgur.com/Tf9Gwln)
+![](https://imgur.com/Tf9Gwln.png)
 
 ---
 
