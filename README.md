@@ -15,7 +15,7 @@ fdp -T png -o graph08.png data graph03.dot
 ```
 
 ---
-## listing_5_1.py 使用的套件
+## listing_5_1.py 重要的的套件
 * argparse 用來讓人輸入使用引數
 * networkx 畫圖
 
@@ -49,10 +49,13 @@ def pecheck(fullpath):
 
 使用argparse處理引數
 最重要的引數調整 --jaccard_index_threshold用來調整門檻值
-門檻值越高越不相似 連接線就會越少
 ```
 parser.add_argument(
     "--jaccard_index_threshold","-j",dest="threshold",type=float,
     default=0.8,help="Threshold above which to create an 'edge' between samples"
 )
 ```
+--- 
+## 分析
+### 門檻值0.8線越少，門檻值0.3線越多
+### 表示門檻值越低 惡意程式相似度越高
