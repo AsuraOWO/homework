@@ -2,12 +2,14 @@
 
 ---
 
-## 畫0.8相關度
+## CH8用到的套件
 
-```
-./listing_5_1.py ../data graph08.dot
-fdp -T png -o graph08.png data graph08.dot
-```
+![](https://imgur.com/a/ZZhKOn8.png)
+
+
+---
+# 執行結果
+
 ![](https://imgur.com/k4Yp1gu.png)
 
 ---
