@@ -3,13 +3,20 @@
 ---
 
 ## CH8用到的套件
-### 最重要的套件是sklearn的 RandomForestClassifier 以及 FeatureHasher
-### 隨機森林演算法會對資料從列方向（觀測值方向）與欄方向（變數方向）進行 Bootstrap sampling，得到不同的訓練資料，然後根據這些訓練資料得到一系列的決策樹分類器
-### 
+### 最重要的套件是sklearn的 RandomForestClassifier 以及 FeatureHasher 
 ![](https://imgur.com/MD2fKGL.png)
 
 ---
-# 執行結果
+
+### 透過 RandomForestClassifier  及 FeatureHasher 來提取特徵讓機器學習訓練提取惡意程式的特徵 
+
+
+---
+
+## 執行結果
+
+### 繪製ROC曲線
+### 我們的檢測器性能良好對於這樣一個基本的例子。假陽性率約為1％，可以檢測到測試集中約94％的惡意軟件樣本 
 
 ![](https://imgur.com/k4Yp1gu.png)
 
