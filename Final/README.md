@@ -25,7 +25,7 @@
 
 ### 執行 run_complete_detector.sh
 ```
-  $ run_complete_detector.sh 
+  $ sh run_complete_detector.sh 
 ```
 
 ### 繪製ROC曲線
